@@ -8,7 +8,7 @@
 |password|string|null: false|
 ### Association
 - has_many :chats
-- has_many :groups
+- has_many :groups, through: :groups_users
 
 ## chatsテーブル
 |Column|Type|Options|
@@ -28,7 +28,7 @@
 |user_id|integer|null: false, foreign_key: true|
 ### Association
 - has_many :chats
-- has_many :users
+- has_many :users, through: :groups_users
 
 ## groups_usersテーブル
 |Column|Type|Options|
