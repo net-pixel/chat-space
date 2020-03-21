@@ -1,0 +1,42 @@
+.side-header {
+  @include -size(100px, 100%);
+  @include -location(flex, center);
+  align-items: center;
+  &__box {
+    @include -size(20px,  calc(100% - 40px));
+    @include -location(flex, space-between);
+    font-weight: bold;
+    &__user-name {
+      line-height: 20px;
+    }
+    &__menu {
+      @include -size(100%, 60px);
+      @include -location(flex, flex-end);
+      line-height: 20px;
+      .icon {
+        @include -color(auto, #ffffff);
+        text-decoration: none;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+.groups {
+  @include -size(calc(100% - 100px), 100%);
+  @include -color(#2f3e51, none);
+  padding: 20px 20px 0;
+  overflow: scroll;
+  .group {
+    margin-bottom: 40px;
+    text-decoration: none;
+    @include -color(auto, white);
+    &--name {
+      margin-bottom: 5px;
+      font-size: 15px;
+    }
+    &--message {
+      font-size: 11px;
+    }
+  }
+}
