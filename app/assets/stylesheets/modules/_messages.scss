@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  $details: #999999;
 }
 
 
@@ -8,13 +7,13 @@
   @include -location(flex, none);
   .chat-side {
   @include -size(100vh, 300px);
-  @include -color(#253141, #ffffff);
+  @include -color($wrapper, #ffffff);
   }
 }
 
 .main-chat {
   @include -size(100vh, calc(100vw - 300px));
-  @include -color(#ffffff, auto);
+  @include -color($MainHead, auto);
   .main-header {
     @include -size(100px, 100%);
     @include -location(flex, space-between);
@@ -31,7 +30,7 @@
       &__member-list {
         @include -location(flex, none);
         font-size: 12px;
-        @include -color(auto, #details);
+        @include -color(auto, $details);
         &__member {
           margin-left: 0.3rem;
         }
@@ -42,16 +41,16 @@
       line-height: 40px;
       padding: 0 20px;
       margin-top: 28px;
-      border: solid 1px #38aef0;
+      border: solid 1px $button;
       position: absolute;
       right: 40px;
       font-size: 16px;
-      @include -color(auto, #38aef0);
+      @include -color(auto, $button);
     }
   }
   .messages {
     @include -size(calc(100% - 190px), 100%);
-    @include -color(#fafafa, auto);
+    @include -color($MainChat, auto);
     padding: 35px 40px;
     .message {
       padding-bottom: 46px;
@@ -64,20 +63,20 @@
           font-weight: bold;
         }
         &--date {
-          @include -color(auto, #999999);
+          @include -color(auto, $details);
           font-size: 12px;
           margin-left: 10px;
         }
       }
       &__text {
-        @include -color(auto, #434A54);
+        @include -color(auto, $message);
         font-size: 14px;
       }
     }
   }
   .form {
     @include -size(90px, 100%);
-    @include -color(#d2d2d2, none);
+    @include -color($MainForm, none);
     padding: 20px 40px;
     .new-message{
       @include -location(flex, none);
@@ -86,7 +85,7 @@
         position: relative;
         &__text {
           @include -size(50px, 100%);
-          @include -color(auto, #434A54);
+          @include -color(auto, $message);
           padding: 0 40px 0 10px;
         }
         &__image {
@@ -102,7 +101,7 @@
       }
       .submit-btn {
         @include -size(50px, auto);
-        @include -color(#38aef0, white);
+        @include -color($button, white);
         padding: 0 30px;
         margin-left: 15px;
         cursor: pointer;
