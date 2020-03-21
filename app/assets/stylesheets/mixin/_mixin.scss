@@ -1,0 +1,29 @@
+@mixin  -size($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin -location($display, $justify-content) {
+  display: $display;
+  justify-content: $justify-content;
+}
+
+@mixin -color($background-color, $color) {
+  background-color: $background-color;
+  color: $color;
+}
+
+//sidebar
+$wrapper: #253141; //sideheader
+$sidegroup: #2f3e51;
+
+
+//mainの文字・ボタン
+$details: #999999;
+$button: #38aef0;
+$message: #434A54;
+
+//mainのbg
+$MainHead: #ffffff;
+$MainChat: #fafafa;
+$MainForm: #d2d2d2;

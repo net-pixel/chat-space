@@ -55,3 +55,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #conert html to haml
 gem 'haml-rails'
 gem 'erb2haml'
+
+gem 'font-awesome-sass'
