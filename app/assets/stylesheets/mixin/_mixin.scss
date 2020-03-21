@@ -1,0 +1,14 @@
+@mixin  -size($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin -location($display, $justify-content) {
+  display: $display;
+  justify-content: $justify-content;
+}
+
+@mixin -color($background-color, $color) {
+  background-color: $background-color;
+  color: $color;
+}
