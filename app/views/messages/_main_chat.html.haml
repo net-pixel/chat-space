@@ -1,0 +1,37 @@
+.main-chat
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group
+        Camp
+      %ul.main-header__left-box__member-list
+        Member：
+        %li.main-header__left-box__member-list__member
+          masa
+    = link_to "#" do
+      .btn.main-header__edit-btn
+        Edit
+  .messages
+    .message
+      .message__upper-info
+        %p.message__upper-info--talker
+          masa
+        %p.message__upper-info--date
+          2020/03/20(Fri) 21:22
+      %p.message__text
+        おはよう！
+    .message
+      .message__upper-info
+        %p.message__upper-info--talker
+          masa
+        %p.message__upper-info--date
+          2020/03/20(Fri) 21:23
+      %p.message__text
+        今日は夜から雨
+  .form
+    #new-message.new-message
+      .input-box
+        %input#message_content.input-box__text{placeholder: "type a message", type: "text"}
+        %label#message_content{class: "input-box__image"}
+          =icon('fas','image')
+          %input{class: "input-box__image--file", type: "file", name: "message[image]", id: "message_image"}
+      %input.submit-btn{type: "submit", name: "commit", value: "Send"}
