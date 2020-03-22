@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 .wrapper {
   @include -location(flex, none);
   .chat-side {
