@@ -1,8 +1,9 @@
 class GroupsController < ApplicationController
+  protect_from_forgery
 
   def index
   end
-  
+
   def new
     @group = Group.new
     @group.users << current_user
