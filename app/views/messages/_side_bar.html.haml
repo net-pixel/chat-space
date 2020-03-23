@@ -4,15 +4,15 @@
       %p.side-header__box__user-name
         = current_user.name
       .side-header__box__menu
-        = link_to new_group_path do
+        = link_to groups_path do
           =icon('fas','comments', class: "icon")
         = link_to edit_user_path(current_user) do
           =icon('fas','user-edit', class: "icon")
   .groups
     - current_user.groups.each do |group|
       .group
-        = link_to edit_group_path(group), class: "group" do
+        = link_to group_messages_path(group), class: "group" do
           .group--name
             = group.name
           .group--message
-            まだメッセージがありません
+            = group.show_last_message
