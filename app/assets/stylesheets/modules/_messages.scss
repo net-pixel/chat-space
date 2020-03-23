@@ -77,8 +77,8 @@
     @include -size(90px, 100%);
     @include -color($MainForm, none);
     padding: 20px 40px;
-    .new-message{
-      @include -location(flex, none);
+    .new_message {
+    @include -location(flex, none);
       .input-box {
         @include -size(none, 100%);
         position: relative;
