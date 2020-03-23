@@ -50,6 +50,7 @@
   .messages {
     @include -size(calc(100% - 190px), 100%);
     @include -color($MainChat, auto);
+    overflow: scroll;
     padding: 35px 40px;
     .message {
       padding-bottom: 46px;
