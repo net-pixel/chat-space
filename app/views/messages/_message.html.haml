@@ -4,15 +4,9 @@
       = message.user.name
     %p.message__upper-info--date
       = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
-  %p.message__text
-    - if message.content.present?
-      = message.content
-    = image_tag message.image.url if message.image.present?
--# .message
--#   .message__upper-info
--#     %p.message__upper-info--talker
--#       masa
--#     %p.message__upper-info--date
--#       2020/03/20(Fri) 21:23
--#   %p.message__text
--#     今日は夜から雨
+  .message__lower-info
+    %p.message__lower-info--text
+      - if message.content.present?
+        = message.content
+    %p.message__lower-info--image
+      = image_tag message.image.url if message.image.present?

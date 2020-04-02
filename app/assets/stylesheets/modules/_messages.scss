@@ -68,10 +68,14 @@
           margin-left: 10px;
         }
       }
-      &__text {
-        @include -color(auto, $message);
-        font-size: 14px;
+      &__lower-info {
       }
+        &__text {
+          @include -color(auto, $message);
+          font-size: 14px;
+        }
+        &__image {
+        }
     }
   }
   .form {
