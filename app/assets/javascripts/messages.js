@@ -1,4 +1,5 @@
-function buildHTML(message){
+$(function(){
+  function buildHTML(message){
   // 「もしメッセージに画像が含まれていたら」という条件式
   if (message.image) {
     var html =
@@ -36,7 +37,7 @@ function buildHTML(message){
   }
   return html
 }
-$(function(){
+
   $('#new_message').on('submit', function(e){
     e.preventDefault()
     var formData = new FormData(this);
