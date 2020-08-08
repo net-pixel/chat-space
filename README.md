@@ -21,7 +21,6 @@
 - jQuery
 - Haml
 - Scss
-- Bootstrap
 - AWS
 
 ## Database
