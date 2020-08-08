@@ -32,7 +32,7 @@
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
-* Association
+Association
 - has_many :chats
 - has_many :groups_users
 - has_many :groups, through: :groups_users
@@ -44,7 +44,7 @@
 |image|text||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-* Association
+Association
 - belongs_to :group
 - belongs_to :user
 
@@ -52,7 +52,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null:false|
-* Association
+Association
 - has_many :chats
 - has_many :groups_users
 - has_many :users, through: :groups_users
@@ -62,6 +62,6 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-* Association
+Association
 - belongs_to :group
 - belongs_to :user
