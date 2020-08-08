@@ -1,6 +1,34 @@
 # README
+## What is this
+これは家族や友人とチャットをすることができるアプリです。
 
-## usersテーブル
+## What can be done
+このアプリでできることは..
+
+* ユーザー
+- メインページ表示
+- ユーザー登録
+- グループ作成
+- メッセージ投稿
+- 写真投稿
+
+## Language Flamework
+このアプリは下記の言語とフレームワークを使用しています。
+
+- Ruby
+- Ruby on rails
+- JavaScript
+- Json
+- jQuery
+- Haml
+- Scss
+- Bootstrap
+- AWS
+
+## Database
+ここからはDatabaseの詳細について説明
+
+### usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
@@ -11,7 +39,7 @@
 - has_many :groups_users
 - has_many :groups, through: :groups_users
 
-## chatsテーブル
+### chatsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text||
@@ -22,7 +50,7 @@
 - belongs_to :group
 - belongs_to :user
 
-## groupsテーブル
+### groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null:false|
@@ -31,7 +59,7 @@
 - has_many :groups_users
 - has_many :users, through: :groups_users
 
-## groups_usersテーブル
+### groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
@@ -39,26 +67,3 @@
 ### Association
 - belongs_to :group
 - belongs_to :user
-
-<!-- This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ... -->
