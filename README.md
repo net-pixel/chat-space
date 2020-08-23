@@ -11,6 +11,12 @@
 - メッセージ投稿
 - 写真投稿
 
+## Test Account
+テストアカウントは下記です。
+ニックネーム：テスト
+email:test@sample.com
+password:testtest
+
 ## Language Flamework
 このアプリは下記の言語とフレームワークを使用しています。
 
