@@ -12,10 +12,10 @@
 - 写真投稿
 
 ## Test Account
-テストアカウントは下記です。
-ニックネーム：テスト
-email:test@sample.com
-password:testtest
+テストアカウントは下記です。  
+ニックネーム：テスト  
+email:test@sample.com  
+password:testtest  
 
 <img width="1272" alt="スクリーンショット 2020-08-23 22 12 18" src="https://user-images.githubusercontent.com/62044473/90979239-cadfc200-e58e-11ea-8a4f-70818073c9fa.png">
 <img width="1272" alt="スクリーンショット 2020-08-23 22 12 29" src="https://user-images.githubusercontent.com/62044473/90979254-e6e36380-e58e-11ea-8064-751873591d41.png">
