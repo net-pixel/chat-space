@@ -53,3 +53,8 @@ production:
   username: root
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
+
+  #以下追記 for heroku
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
