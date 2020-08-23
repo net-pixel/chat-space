@@ -12,6 +12,6 @@ CarrierWave.configure do |config|
     region: 'ap-northeast-1'
   }
 
-  config.fog_directory  = 'net-pixel'
-  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/net-pixel'
+  config.fog_directory  = 'chatanywhere'
+  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/chatanywhere'
 end
