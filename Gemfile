@@ -75,7 +75,7 @@ gem 'haml-rails'
 
 gem 'font-awesome-sass'
 
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.1'
 gem 'devise'
 gem 'fog-aws'
 gem 'mini_magick'
